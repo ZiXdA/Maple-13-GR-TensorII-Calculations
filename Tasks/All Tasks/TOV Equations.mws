@@ -1,0 +1,273 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Text Output" -1 6 
+1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 2 1 3 1 }1 1 
+0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "Cour
+ier" 1 10 255 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 
+1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Normal" 
+-1 256 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 
+1 0 0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "exit;restart;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#%%exitG" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 35 "libname:=`C:/Grtii(6)/Lib`,libname:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "readlib(grii):" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 11 "grtensor():" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#%=GRTensorII~Version~1.79~(R4)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+%06~February~2001G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%ZDeveloped~by~P
+eter~Musgrave,~Denis~Pollney~and~Kayll~LakeG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%DCopyright~1994-2001~by~the~authors.G" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#%inLatest~version~available~from:~http://grtensor.
+phy.queensu.ca/G" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "makeg(i
+nterior);" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 
+1 " " }}{PARA 6 "" 1 "" {TEXT -1 46 "Makeg 2.0: GRTensor metric/basis \+
+entry utility" }}{PARA 6 "" 1 "" {TEXT -1 1 " " }}{PARA 6 "" 1 "" 
+{TEXT -1 41 "To quit makeg, type 'exit' at any prompt." }}{PARA 6 "" 
+1 "" {TEXT -1 1 " " }}{PARA 6 "" 1 "" {TEXT -1 44 "Do you wish to ente
+r a 1) metric [g(dn,dn)]," }}{PARA 6 "" 1 "" {TEXT -1 44 "            \+
+           2) line element [ds]," }}{PARA 6 "" 1 "" {TEXT -1 63 "     \+
+                  3) non-holonomic basis [e(1)...e(n)], or" }}{PARA 6 
+"" 1 "" {TEXT -1 49 "                       4) NP tetrad [l,n,m,mbar]?
+" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "makeg>" 0 "" 
+{MPLTEXT 1 0 2 "1;" }}{PARA 6 "" 1 "" {TEXT -1 50 "Enter coordinates a
+s a LIST (eg. [t,r,theta,phi]):" }}}{EXCHG {PARA 0 "makeg>" 0 "" 
+{MPLTEXT 1 0 16 "[t,r,theta,phi];" }}{PARA 6 "" 1 "" {TEXT -1 30 "Is t
+he metric  1) Diagonal, or" }}{PARA 6 "" 1 "" {TEXT -1 28 "           \+
+    2) Symmetric?" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "1;
+" }}{PARA 6 "" 1 "" {TEXT -1 13 "Enter g[t,t]:" }}}{EXCHG {PARA 0 "mak
+eg>" 0 "" {MPLTEXT 1 0 15 "-exp(2*Phi(r));" }}{PARA 6 "" 1 "" {TEXT 
+-1 13 "Enter g[r,r]:" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 17 
+"exp(2*Lambda(r));" }}{PARA 6 "" 1 "" {TEXT -1 21 "Enter g[theta,theta
+]:" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 4 "r^2;" }}{PARA 6 "
+" 1 "" {TEXT -1 17 "Enter g[phi,phi]:" }}}{EXCHG {PARA 0 "makeg>" 0 "
+" {MPLTEXT 1 0 17 "r^2*sin(theta)^2;" }}{PARA 6 "" 1 "" {TEXT -1 0 "" 
+}}{PARA 6 "" 1 "" {TEXT -1 67 "If there are any complex valued coordin
+ates, constants or functions" }}{PARA 6 "" 1 "" {TEXT -1 66 "for this \+
+spacetime, please enter them as a SET ( eg. \{ z, psi \} )." }}{PARA 
+6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 33 "Complex quantit
+ies [default=\{\}]: " }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "
+\{\}" }}{PARA 6 "" 1 "" {TEXT -1 2 "\{\}" }}{PARA 6 "" 1 "" {TEXT -1 
+1 " " }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%AThe~values~you~have~entered~
+are:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%,CoordinatesG7&%\"tG%\"rG%&
+thetaG%$phiG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%(Metric:G" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/*&&%\"gG6#%\"aG\"\"\"&%!G6#%\"bGF)K%'matrix
+G6#7&7&,$-%$expG6#,$*&\"\"#F)-%$PhiG6#%\"rGF)F)!\"\"\"\"!F?F?7&F?-F56#
+,$*&F9F)-%'LambdaGF<F)F)F?F?7&F?F?*$)F=F9F)F?7&F?F?F?*&FIF))-%$sinG6#%
+&thetaGF9F)Q(pprint06\"" }}{PARA 6 "" 1 "" {TEXT -1 54 "You may choose
+ to 0) Use the metric WITHOUT saving it," }}{PARA 6 "" 1 "" {TEXT -1 
+46 "                  1) Save the metric as it is," }}{PARA 6 "" 1 "" 
+{TEXT -1 54 "                  2) Correct an element of the metric," }
+}{PARA 6 "" 1 "" {TEXT -1 41 "                  3) Re-enter the metric
+," }}{PARA 6 "" 1 "" {TEXT -1 54 "                  4) Add/change cons
+traint equations, " }}{PARA 6 "" 1 "" {TEXT -1 47 "                  5
+) Add a text description, or" }}{PARA 6 "" 1 "" {TEXT -1 61 "         \+
+         6) Abandon this metric and return to Maple." }}{PARA 6 "" 1 "
+" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "0;" }}
+{PARA 6 "" 1 "" {TEXT -1 42 "Calculated ds for interior (0.000000 sec.
+)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%2Default~spacetimeG%)interiorG
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%<For~the~interior~spacetime:G" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#%,CoordinatesG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#-%\"xG6#%#upG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/)%#x~
+G%\"aGK%'vectorG6#7&%\"tG%\"rG%&thetaG%$phiGQ(pprint06\"" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#%-Line~elementG" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#/*$)%$~dsG\"\"#\"\"\",**(-%$expG6#,$*&F'F(-%$PhiG6#%\"rGF(F(F(%#~dG
+F()%\"tG%#2~GF(!\"\"*(-F,6#,$*&F'F(-%'LambdaGF2F(F(F(F4F()F3F7F(F(*()F
+3F'F(F4F()%&thetaGF7F(F(**FBF()-%$sinG6#FDF'F(F4F()%$phiGF7F(F(" }}
+{PARA 6 "" 1 "" {TEXT -1 18 "makeg() completed." }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 38 "grcalc(G(dn,up));\ngrdisplay(G(dn,up));" }}
+{PARA 6 "" 1 "" {TEXT -1 32 "Created definition for G(dn,up) " }}
+{PARA 6 "" 1 "" {TEXT -1 52 "Calculated g(dn,dn,pdn) for interior (0.0
+00000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 53 "Calculated Chr(dn,dn,dn) f
+or interior (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 44 "Calculated
+ detg for interior (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 48 "Cal
+culated g(up,up) for interior (0.000000 sec.)" }}{PARA 6 "" 1 "" 
+{TEXT -1 53 "Calculated Chr(dn,dn,up) for interior (0.000000 sec.)" }}
+{PARA 6 "" 1 "" {TEXT -1 48 "Calculated R(dn,dn) for interior (0.01500
+0 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 51 "Calculated Ricciscalar for int
+erior (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 48 "Calculated G(dn,
+dn) for interior (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 48 "Calcu
+lated G(dn,up) for interior (0.000000 sec.)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/%*CPU~Time~G$\"#:!\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#%<For~the~interior~spacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%
+)G(dn,up)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%\"GG6$%#dnG%#upG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/)&%#G~G6#%\"aG%\"bGK%'matrixG6#7&7&,$
+*(,(*(\"\"#\"\"\"%\"rGF4-%%diffG6$-%'LambdaG6#F5F5F4F4-%$expG6#,$*&F3F
+4F9F4F4F4F4!\"\"F4F5!\"#F<FAFA\"\"!FCFC7&FC*(F<FA,(*(F3F4F5F4-F76$-%$P
+hiGF;F5F4F4F<FAF4F4F4F5FBFCFC7&FCFC*(F5FA,,FHF4F6FA*(FHF4F6F4F5F4FA*&-
+F76$FJ-%\"$G6$F5F3F4F5F4F4*&)FHF3F4F5F4F4F4F<FAFC7&FCFCFCFMQ(pprint06
+\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "grdef ( `V\{^a\} := [
+1,0,0,0]` ):" }}{PARA 6 "" 1 "" {TEXT -1 40 "Components assigned for m
+etric: interior" }}{PARA 6 "" 1 "" {TEXT -1 28 "Created definition for
+ V(up)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "grnormalize ( V(u
+p), -1 );" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%LThe~components~of~the~n
+ormalized~vector~areG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/)%\"VG%\"tG*
+&\"\"\"F(*$-%$expG6#,$*&\"\"#F(-%$PhiG6#%\"rGF(F(#F(F/!\"\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/)%\"VG%\"rG\"\"!" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/)%\"VG%&thetaG\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#/)%\"VG%$phiG\"\"!" }}{PARA 6 "" 1 "" {TEXT -1 66 "Do you wish to ove
+rwrite V(up) with the normalized vector? (1=yes)" }}{PARA 6 "" 1 "" 
+{TEXT -1 0 "" }}}{EXCHG {PARA 0 "grnormalize>" 0 "" {MPLTEXT 1 0 2 "1;
+" }}{PARA 6 "" 1 "" {TEXT -1 27 "V(up) has been overwritten." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "grcalc(V(dn),1):gralter(V(dn
+),1):" }}{PARA 6 "" 1 "" {TEXT -1 29 "Created definition for V(dn) " }
+}{PARA 6 "" 1 "" {TEXT -1 45 "Calculated V(dn) for interior (0.000000 \+
+sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}
+{PARA 6 "" 1 "" {TEXT -1 48 "Component simplification of a GRTensorII \+
+object:" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 
+41 "Applying routine simplify to object V(dn)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 34 "grdisplay(V(up)):grdisplay(V(dn)):" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#%<For~the~interior~spacetime:G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%&V(up)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%\"VG6#%#u
+pG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/)%\"VG%\"aGK%'vectorG6#7&*&\"\"
+\"F,*$-%$expG6#,$*&\"\"#F,-%$PhiG6#%\"rGF,F,#F,F3!\"\"\"\"!F:F:Q(pprin
+t06\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%<For~the~interior~spacetime:
+G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%&V(dn)G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#-%\"VG6#%#dnG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/&%\"V
+G6#%\"aGK%'vectorG6#7&,$*$-%$expG6#,$*&\"\"#\"\"\"-%$PhiG6#%\"rGF4F4#F
+4F3!\"\"\"\"!F;F;Q(pprint06\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 56 "grdef(`SET\{a b\}:=(rho(r)+p(r))*V\{a\}*V\{b\}+p(r)*g\{a b\}`);
+\n" }}{PARA 6 "" 1 "" {TEXT -1 33 "Created definition for SET(dn,dn)" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "grcalc(SET(dn,up));gralte
+r(SET(dn,up),1);\n" }}{PARA 6 "" 1 "" {TEXT -1 34 "Created definition \+
+for SET(dn,up) " }}{PARA 6 "" 1 "" {TEXT -1 50 "Calculated SET(dn,dn) \+
+for interior (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 50 "Calculate
+d SET(dn,up) for interior (0.000000 sec.)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}{PARA 6 "" 1 "" {TEXT -1 48 "C
+omponent simplification of a GRTensorII object:" }}{PARA 6 "" 1 "" 
+{TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 46 "Applying routine simplify
+ to object SET(dn,up)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G
+$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "grdisplay(SET(d
+n,up));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%<For~the~interior~spacetim
+e:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%+SET(dn,up)G" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#-%$SETG6$%#dnG%#upG" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#/)&%$SETG6#%\"aG%\"bGK%'matrixG6#7&7&,$-%$rhoG6#%\"rG!\"\"\"\"!F5F5
+7&F5-%\"pGF2F5F57&F5F5F7F57&F5F5F5F7Q(pprint06\"" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 74 "grdef(`cons\{ ^i \}:= Tm\{^i ^j;j\}`); \ngrca
+lc(cons(up));\ngralter(cons(up),1);" }}{PARA 6 "" 1 "" {TEXT -1 58 "Wa
+rning = `No definition found for object` = Tm(up,up,cdn)" }}{PARA 6 "
+" 1 "" {TEXT -1 31 "Created definition for cons(up)" }}{PARA 8 "" 1 "
+" {TEXT -1 78 "Error, (in grF_checkIfDefined) No definition found for \+
+object = Tm(up,up,cdn)\n" }}{PARA 6 "" 1 "" {TEXT -1 33 "cons(up) has \+
+not been calculated." }}{PARA 6 "" 1 "" {TEXT -1 48 "Component simplif
+ication of a GRTensorII object:" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "grdef(`con\{ ^i \}:= SET\{^i ^j;j\}
+`); \ngrcalc(con(up));\ngralter(con(up),1);" }}{PARA 6 "" 1 "" {TEXT 
+-1 34 "Created definition for SET(up,up) " }}{PARA 6 "" 1 "" {TEXT -1 
+39 "Created a definition for SET(up,up,cdn)" }}{PARA 6 "" 1 "" {TEXT 
+-1 30 "Created definition for con(up)" }}{PARA 6 "" 1 "" {TEXT -1 50 "
+Calculated SET(up,up) for interior (0.000000 sec.)" }}{PARA 6 "" 1 "" 
+{TEXT -1 54 "Calculated SET(up,up,cdn) for interior (0.000000 sec.)" }
+}{PARA 6 "" 1 "" {TEXT -1 47 "Calculated con(up) for interior (0.00000
+0 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}
+{PARA 6 "" 1 "" {TEXT -1 48 "Component simplification of a GRTensorII \+
+object:" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 
+43 "Applying routine simplify to object con(up)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 19 "grdisplay(con(up));" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#%<For~the~interior~spacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%(
+con(up)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%$conG6#%#upG" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/)%$conG%\"aGK%'vectorG6#7&\"\"!*&,(*&-%$rho
+G6#%\"rG\"\"\"-%%diffG6$-%$PhiGF1F2F3F3*&-%\"pGF1F3F4F3F3-F56$F:F2F3F3
+-%$expG6#,$*&\"\"#F3-%'LambdaGF1F3!\"\"F3F+F+Q(pprint06\"" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 65 "cond1:=Lambda(r)=solve(exp(-2*Lambd
+a(r))=1-2*G*m(r)/r,Lambda(r));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&c
+ond1G/-%'LambdaG6#%\"rG,$*&#\"\"\"\"\"#F--%#lnG6#,$*&,&F)!\"\"*(F.F-%
+\"GGF--%\"mGF(F-F-F-F)F5F5F-F5" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 37 "grmap ( G(dn,up), subs, cond1, 'x' ):" }}{PARA 6 "" 1 "" 
+{TEXT -1 33 "Applying routine subs to G(dn,up)" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 24 "grcalcalter(G(dn,up),1):" }}{PARA 6 "" 1 "" 
+{TEXT -1 50 "Simplification will be applied during calculation." }}
+{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU
+~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "grdef(`F
+E\{a b\}:= G\{a b\}=8*Pi*G*SET\{a b\}`):\n" }}{PARA 6 "" 1 "" {TEXT 
+-1 36 "Created definition for lhs_FE(dn,dn)" }}{PARA 6 "" 1 "" {TEXT 
+-1 36 "Created definition for rhs_FE(dn,dn)" }}{PARA 6 "" 1 "" {TEXT 
+-1 32 "Created definition for FE(dn,dn)" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 38 "grmap ( FE(dn,up), subs, cond1, 'x' );" }}{PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 0 "" }}{PARA 6 "" 1 "" {TEXT -1 33 "Created defini
+tion for FE(dn,up) " }}{PARA 6 "" 1 "" {TEXT -1 34 "FE(dn,up) has not \+
+been calculated." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "grcalca
+lter(FE(dn,up),1):" }}{PARA 6 "" 1 "" {TEXT -1 50 "Simplification will
+ be applied during calculation." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}
+{PARA 6 "" 1 "" {TEXT -1 49 "Applying routine simplify to object lhs_F
+E(dn,dn)" }}{PARA 6 "" 1 "" {TEXT -1 53 "Calculated lhs_FE(dn,dn) for \+
+interior (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 49 "Applying rout
+ine simplify to object rhs_FE(dn,dn)" }}{PARA 6 "" 1 "" {TEXT -1 53 "C
+alculated rhs_FE(dn,dn) for interior (0.000000 sec.)" }}{PARA 6 "" 1 "
+" {TEXT -1 45 "Applying routine simplify to object FE(dn,dn)" }}{PARA 
+6 "" 1 "" {TEXT -1 49 "Calculated FE(dn,dn) for interior (0.000000 sec
+.)" }}{PARA 6 "" 1 "" {TEXT -1 45 "Applying routine simplify to object
+ FE(dn,up)" }}{PARA 6 "" 1 "" {TEXT -1 49 "Calculated FE(dn,up) for in
+terior (0.016000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~
+G$\"#;!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "grdisplay(FE(
+dn,up)):" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%<For~the~interior~spaceti
+me:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%*FE(dn,up)G" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#-%#FEG6$%#dnG%#upG" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#/)&%#FEG6#%\"aG%\"bGK%'matrixG6#7&7&/,$*(-%$expG6#,$*&\"\"#\"\"\"-%'
+LambdaG6#%\"rGF8!\"\"F8,(*(F7F8F<F8-%%diffG6$F9F<F8F8-F36#,$*&F7F8F9F8
+F8F8F8F=F8F<!\"#F=,$**\"\")F8%#PiGF8%\"GGF8-%$rhoGF;F8F=/\"\"!FPFOFO7&
+FO/*(F2F8,(*(F7F8F<F8-FA6$-%$PhiGF;F<F8F8FCF=F8F8F8F<FG,$**FJF8FKF8FLF
+8-%\"pGF;F8F8FOFO7&FOFO/,$*(F<F=,,FVF=F@F8*(FVF8F@F8F<F8F8*&-FA6$FX-%
+\"$G6$F<F7F8F<F8F=*&)FVF7F8F<F8F=F8F2F8F=FZFO7&FOFOFOFinQ(pprint06\"" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 73 "eq1 := simplify(subs(cond
+1,expand(grcomponent(FE(dn,up), [t,t]))), size);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$eq1G/,$**\"\"#\"\"\"%\"rG!\"#%\"GGF)-%%diffG6$-%\"mG
+6#F*F*F)!\"\",$**\"\")F)%#PiGF)F,F)-%$rhoGF2F)F3" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 74 "eq2 := simplify(subs(cond1, expand(grcomponen
+t(FE(dn,up), [r,r]))), size);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$eq
+2G/*&,(*(\"\"#\"\"\")%\"rGF)F*-%%diffG6$-%$PhiG6#F,F,F*F**,\"\"%F*F,F*
+F-F*%\"GGF*-%\"mGF2F*!\"\"*(F)F*F5F*F6F*F8F*F,!\"$,$**\"\")F*%#PiGF*F5
+F*-%\"pGF2F*F*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 70 "eq3 := si
+mplify(subs(cond1, expand(grcomponent(con(up), [r]))), size);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$eq3G,$**\"\"#\"\"\",&*&,&-%$rhoG6#%
+\"rGF(-%\"pGF.F(F(-%%diffG6$-%$PhiGF.F/F(F(-F36$F0F/F(F(,&*&F'!\"\"F/F
+(F;*&%\"GGF(-%\"mGF.F(F(F(F/F;F;" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 12 "ic1:=m(0)=0;" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$ic1G/-%\"mG6#\"\"!F)" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 82 "BC:=[Phi(R)=solve(subs(r=R,grcompon
+ent(g(dn,dn),[t,t]))=1-2*G*M/R,Phi(R)),p(R)=0];" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%#BCG7$/-%$PhiG6#%\"RG,$*&#\"\"\"\"\"#F.-%#lnG6#*&,&F*
+!\"\"*(F/F.%\"GGF.%\"MGF.F.F.F*F5F.F./-%\"pGF)\"\"!" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 32 "TOV1:=isolate(eq1,diff(m(r),r));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%TOV1G/-%%diffG6$-%\"mG6#%\"rGF,,$**
+\"\"%\"\"\"%#PiGF0-%$rhoGF+F0)F,\"\"#F0F0" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 34 "TOV2:=isolate(eq2,diff(Phi(r),r));" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%%TOV2G/-%%diffG6$-%$PhiG6#%\"rGF,*&,&*,\"\")\"\"
+\"%#PiGF1%\"GGF1-%\"pGF+F1)F,\"\"$F1F1*(\"\"#F1F3F1-%\"mGF+F1F1F1,&*&F
+9F1)F,F9F1F1**\"\"%F1F,F1F3F1F:F1!\"\"FA" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 43 "TOV3:=subs(TOV2,isolate(eq3,diff(p(r),r)));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%%TOV3G/-%%diffG6$-%\"pG6#%\"rGF,,&*(-%$rho
+GF+\"\"\",&*,\"\")F1%#PiGF1%\"GGF1F)F1)F,\"\"$F1F1*(\"\"#F1F6F1-%\"mGF
++F1F1F1,&*&F:F1)F,F:F1F1**\"\"%F1F,F1F6F1F;F1!\"\"FBFB*(F)F1F2F1F=FBFB
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "EOS:=rho(r)=rho0;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$EOSG/-%$rhoG6#%\"rG%%rho0G" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "TOV_SYS:=eval(subs(EOS,[TOV1
+,TOV2,TOV3]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(TOV_SYSG7%/-%%dif
+fG6$-%\"mG6#%\"rGF-,$**\"\"%\"\"\"%#PiGF1%%rho0GF1)F-\"\"#F1F1/-F(6$-%
+$PhiGF,F-*&,&*,\"\")F1F2F1%\"GGF1-%\"pGF,F1)F-\"\"$F1F1*(F5F1F?F1F*F1F
+1F1,&*&F5F1F4F1F1**F0F1F-F1F?F1F*F1!\"\"FH/-F(6$F@F-,&*(F3F1F<F1FEFHFH
+*(F@F1F<F1FEFHFH" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "Mass:=d
+solve(\{TOV_SYS[1],m(0)=0\});" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%Ma
+ssG/-%\"mG6#%\"rG,$*,\"\"%\"\"\"\"\"$!\"\"%#PiGF-%%rho0GF-F)F.F-" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "press:=simplify(simplify(dso
+lve(\{subs(Mass,TOV_SYS[3]),BC[2]\}),symbolic),size);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%&pressG/-%\"pG6#%\"rG,$**\"#7\"\"\"%%rho0GF-,(*(
+F,!\"\",&\"\"$F1*,\"\")F-)F)\"\"#F-%\"GGF-%#PiGF-F.F-F-#F-F7,&F3F1*,F5
+F-)%\"RGF7F-F8F-F9F-F.F-F-F:F1#F-\"\"%F1**,&*$F=F-F-*&F3F1F)F7F1F-F8F-
+F9F-F.F-F-F-,&F,F1**,&*&\"#OF-F=F-F-*&F@F-F6F-F1F-F8F-F9F-F.F-F-F1F1" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "press0:=simplify(subs(r=0
+,press),size);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'press0G/-%\"pG6#
+\"\"!,$*(%%rho0G\"\"\",(*&!\"$#F-\"\"#,&\"\"$!\"\"*,\"\")F-)%\"RGF2F-%
+\"GGF-%#PiGF-F,F-F-F1F5F4F5*,\"#7F-F8F-F:F-F;F-F,F-F-F-,&F=F5*,\"#OF-F
+8F-F:F-F;F-F,F-F-F5F5" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 109 "B
+uchdahl:=G*M/R=solve(subs(M=x*R/G,subs(rho0=subs(r=R,subs(m(r)=M,solve
+(Mass,rho0))),denom(rhs(press0)))),x);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%)BuchdahlG/*(%\"GG\"\"\"%\"MGF(%\"RG!\"\"#\"\"%\"\"*" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "13 4 0" 0 }
+{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

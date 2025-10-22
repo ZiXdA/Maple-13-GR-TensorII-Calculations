@@ -1,0 +1,339 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+257 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 1 14 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 259 "" 1 14 0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 }{CSTYLE "" -1 260 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 261 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+262 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 263 "" 1 14 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 }{CSTYLE "" -1 265 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 266 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+267 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }1 1 0 0 0 
+0 1 0 1 0 2 2 0 1 }{PSTYLE "Text Output" -1 6 1 {CSTYLE "" -1 -1 "Cour
+ier" 1 10 0 0 255 1 2 2 2 2 2 1 2 1 3 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }
+{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 
+2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Normal" -1 
+256 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }1 1 
+0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Normal" -1 257 1 {CSTYLE "" -1 -1 "T
+imes" 1 14 0 0 0 1 2 1 2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }
+{PSTYLE "Normal" -1 258 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 
+2 2 2 1 1 1 1 }3 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "" 0 259 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 256 "" 0 "" {TEXT 256 16 "In this exercise" }
+{TEXT -1 324 " \n(1) We let Maple reads grtii library to execute the p
+ackage commands.\n(2) We show how to introduce metric in a particular \+
+coordinate system (e.g., 3D flat space).\n(3) We show how to calculate
+ some tensors.\n(4) We show how to transform to a new coordinate syste
+m.\n(5) Some aspects related to GR theory (Gravity=Curvature). " }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "exit;restart;" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#%%exitG" }}}{EXCHG {PARA 258 "" 0 "" {TEXT -1 0 
+"" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 258 "" 0 "" {TEXT 257 68 "(
+1) We let Maple reads grtii library to execute the package commands" }
+}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "libname:=`C:/Grtii(6)/Lib`,l
+ibname:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "readlib(grii):" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "grtensor():" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#%=GRTensorII~Version~1.79~(R4)G" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#%06~February~2001G" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#%ZDeveloped~by~Peter~Musgrave,~Denis~Pollney~and~Kayll~LakeG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#%DCopyright~1994-2001~by~the~authors.G
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%inLatest~version~available~from:~
+http://grtensor.phy.queensu.ca/G" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 44 "grOptionMetricPath := `C:/Grtii(6)/Metrics`:" }}}
+{EXCHG {PARA 258 "" 0 "" {TEXT -1 0 "" }}{PARA 258 "" 0 "" {TEXT -1 0 
+"" }}{PARA 258 "" 0 "" {TEXT 260 91 "(2) We show how to introduce metr
+ic in a particular coordinate system (e.g., 3D flat space)" }}{PARA 0 
+"" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 
+257 "" 0 "" {TEXT 258 36 "Enter Flat space metric in Cart. Coo" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "makeg(Flat):" }}{PARA 6 "" 
+1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 1 " " }}{PARA 6 "" 1 "" 
+{TEXT -1 46 "Makeg 2.0: GRTensor metric/basis entry utility" }}{PARA 
+6 "" 1 "" {TEXT -1 1 " " }}{PARA 6 "" 1 "" {TEXT -1 41 "To quit makeg,
+ type 'exit' at any prompt." }}{PARA 6 "" 1 "" {TEXT -1 1 " " }}{PARA 
+6 "" 1 "" {TEXT -1 44 "Do you wish to enter a 1) metric [g(dn,dn)]," }
+}{PARA 6 "" 1 "" {TEXT -1 44 "                       2) line element [
+ds]," }}{PARA 6 "" 1 "" {TEXT -1 63 "                       3) non-hol
+onomic basis [e(1)...e(n)], or" }}{PARA 6 "" 1 "" {TEXT -1 49 "       \+
+                4) NP tetrad [l,n,m,mbar]?" }}{PARA 6 "" 1 "" {TEXT 
+-1 0 "" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "1;" }}{PARA 6 
+"" 1 "" {TEXT -1 50 "Enter coordinates as a LIST (eg. [t,r,theta,phi])
+:" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 8 "[x,y,z];" }}{PARA 
+6 "" 1 "" {TEXT -1 30 "Is the metric  1) Diagonal, or" }}{PARA 6 "" 1 
+"" {TEXT -1 28 "               2) Symmetric?" }}}{EXCHG {PARA 0 "makeg
+>" 0 "" {MPLTEXT 1 0 2 "1;" }}{PARA 6 "" 1 "" {TEXT -1 13 "Enter g[x,x
+]:" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "1;" }}{PARA 6 "" 
+1 "" {TEXT -1 13 "Enter g[y,y]:" }}}{EXCHG {PARA 0 "makeg>" 0 "" 
+{MPLTEXT 1 0 2 "1;" }}{PARA 6 "" 1 "" {TEXT -1 13 "Enter g[z,z]:" }}}
+{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "1;" }}{PARA 6 "" 1 "" 
+{TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 67 "If there are any complex \+
+valued coordinates, constants or functions" }}{PARA 6 "" 1 "" {TEXT 
+-1 66 "for this spacetime, please enter them as a SET ( eg. \{ z, psi \+
+\} )." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 33 "
+Complex quantities [default=\{\}]: " }}}{EXCHG {PARA 0 "makeg>" 0 "" 
+{MPLTEXT 1 0 3 "\{\};" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%AThe~values~
+you~have~entered~are:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%,Coordinat
+esG7%%\"xG%\"yG%\"zG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%(Metric:G" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&&%\"gG6#%\"aG\"\"\"&%!G6#%\"bGF)K%'
+matrixG6#7%7%F)\"\"!F37%F3F)F37%F3F3F)Q(pprint06\"" }}{PARA 6 "" 1 "" 
+{TEXT -1 54 "You may choose to 0) Use the metric WITHOUT saving it," }
+}{PARA 6 "" 1 "" {TEXT -1 46 "                  1) Save the metric as \+
+it is," }}{PARA 6 "" 1 "" {TEXT -1 54 "                  2) Correct an
+ element of the metric," }}{PARA 6 "" 1 "" {TEXT -1 41 "              \+
+    3) Re-enter the metric," }}{PARA 6 "" 1 "" {TEXT -1 54 "          \+
+        4) Add/change constraint equations, " }}{PARA 6 "" 1 "" {TEXT 
+-1 47 "                  5) Add a text description, or" }}{PARA 6 "" 
+1 "" {TEXT -1 61 "                  6) Abandon this metric and return \+
+to Maple." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "makeg>" 
+0 "" {MPLTEXT 1 0 2 "0;" }}{PARA 6 "" 1 "" {TEXT -1 38 "Calculated ds \+
+for Flat (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%2Default
+~spacetimeG%%FlatG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%8For~the~Flat~s
+pacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%,CoordinatesG" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#-%\"xG6#%#upG" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#/)%#x~G%\"aGK%'vectorG6#7%%\"xG%\"yG%\"zGQ(pprint06\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#%-Line~elementG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/*$)%$~dsG\"\"#\"\"\",(*&%#~dGF()%\"xG%#2~GF(F(*&F+F()%
+\"yGF.F(F(*&F+F()%\"zGF.F(F(" }}{PARA 6 "" 1 "" {TEXT -1 18 "makeg() c
+ompleted." }}}{EXCHG {PARA 258 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 0 "" }}{PARA 258 "" 0 "" {TEXT 259 41 "(3) We show how to c
+alculate some tensors" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 
+"" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 261 19 "Christoffel s
+ymbols" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "grcalc ( Chr(up,d
+n,dn) ):" }}{PARA 6 "" 1 "" {TEXT -1 37 "Created definition for Chr(up
+,dn,dn) " }}{PARA 6 "" 1 "" {TEXT -1 48 "Calculated g(dn,dn,pdn) for F
+lat (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 49 "Calculated Chr(dn,
+dn,dn) for Flat (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 40 "Calcul
+ated detg for Flat (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 44 "Cal
+culated g(up,up) for Flat (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 
+49 "Calculated Chr(up,dn,dn) for Flat (0.000000 sec.)" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 27 "grdisplay( Chr(up,dn,dn) ):" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%8For~the~Flat~spacetime:G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%.Chr(up,dn,dn)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%.
+Chr(up,dn,dn)G%8All~components~are~zeroG" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT 262 16 "Curvature tensor" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 19 "grcalc ( Riemann ):" }}{PARA 6 "" 1 "" {TEXT -1 50 "Calculated
+ R(dn,dn,dn,dn) for Flat (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+22 "grdisplay ( Riemann ):" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%8For~th
+e~Flat~spacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%2Covariant~Riem
+annG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%/R(dn,dn,dn,dn)G%8All~compon
+ents~are~zeroG" }}}{EXCHG {PARA 258 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }}{PARA 258 "" 0 "" {TEXT 263 55 "(4) We show how
+ to transform to a new coordinate system" }}{PARA 0 "" 0 "" {TEXT -1 
+0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+264 23 "Transform to polar coo." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 108 "xform := [ x(r,theta,phi)=r*sin(theta)*cos(phi),y(r,theta,phi
+)=r*sin(theta)*sin(phi),z(r,phi)=r*cos(theta)];" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%&xformG7%/-%\"xG6%%\"rG%&thetaG%$phiG*(F*\"\"\"-%$sin
+G6#F+F.-%$cosG6#F,F./-%\"yGF)*(F*F.F/F.-F0F4F./-%\"zG6$F*F,*&F*F.-F3F1
+F." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "grtransform ( Flat, P
+olar, xform ):" }}{PARA 6 "" 1 "" {TEXT -1 39 "Calculated ds for Polar
+ (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 32 "The new default metri
+c is: Polar" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "grcalcalter(
+x(up),11):" }}{PARA 6 "" 1 "" {TEXT -1 50 "Simplification will be appl
+ied during calculation." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 20 "grdisplay(x(up),11):" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#%9For~the~Polar~spacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%
+,CoordinatesG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%\"xG6#%#upG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/)%#x~G%\"aGK%'vectorG6#7%%\"rG%&theta
+G%$phiGQ(pprint06\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "grca
+lc(g(dn,dn));gralter(g(dn,dn),11);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+/%*CPU~Time~G$\"\"!F&" }}{PARA 6 "" 1 "" {TEXT -1 48 "Component simpli
+fication of a GRTensorII object:" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}
+{PARA 6 "" 1 "" {TEXT -1 55 "Applying routine `simplify[trigsin]` to o
+bject g(dn,dn)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F
+&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "simplify(grdisplay(g(d
+n,dn)),symbolic):" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%9For~the~Polar~s
+pacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%8Covariant~metric~tenso
+rG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%\"gG6$%#dnGF&" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/*&&%#g~G6#%\"aG\"\"\"&%!G6#%\"bGF)K%'matrixG6#7%7
+%F)\"\"!F37%F3*$)%\"rG\"\"#F)F37%F3F3*&F6F))-%$sinG6#%&thetaGF8F)Q(ppr
+int06\"" }}}{EXCHG {PARA 258 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 258 "" 0 "" {TEXT 267 57 "(5) Some aspects relat
+ed to GR theory (Gravity=Curvature)" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }
+}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 265 56 
+"Christoffel symbols are not zeros (rotation not gravity)" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "grcalcalter ( Chr(up,dn,dn), 2 ):" 
+}}{PARA 6 "" 1 "" {TEXT -1 50 "Simplification will be applied during c
+alculation." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT 
+-1 56 "Applying routine `simplify[trig]` to object g(dn,dn,pdn)" }}
+{PARA 6 "" 1 "" {TEXT -1 49 "Calculated g(dn,dn,pdn) for Polar (0.0000
+00 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 57 "Applying routine `simplify[tr
+ig]` to object Chr(dn,dn,dn)" }}{PARA 6 "" 1 "" {TEXT -1 50 "Calculate
+d Chr(dn,dn,dn) for Polar (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 
+52 "Applying routine `simplify[trig]` to object g(up,up)" }}{PARA 6 "
+" 1 "" {TEXT -1 41 "Calculated detg for Polar (0.000000 sec.)" }}
+{PARA 6 "" 1 "" {TEXT -1 45 "Calculated g(up,up) for Polar (0.000000 s
+ec.)" }}{PARA 6 "" 1 "" {TEXT -1 57 "Applying routine `simplify[trig]`
+ to object Chr(up,dn,dn)" }}{PARA 6 "" 1 "" {TEXT -1 50 "Calculated Ch
+r(up,dn,dn) for Polar (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 
+"grdisplay( Chr(up,dn,dn) ):" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%9For~
+the~Polar~spacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%.Chr(up,dn,d
+n)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%&thetaG\"\"\"&%!G6
+#*&%&thetaGF(%\"rGF(F(,$*&F(F(%\"rG!\"\"F2" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/*&)%&GammaG%$phiG\"\"\"&%!G6#*&%$phiGF(%\"rGF(F(,$*&F(
+F(%\"rG!\"\"F2" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%&thetaG
+\"\"\"&%!G6#*&%\"rGF(%&thetaGF(F(*&F(F(%\"rG!\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/*&)%&GammaG%\"rG\"\"\"&%!G6#*&%&thetaGF(%&thetaGF(F(%
+\"rG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%$phiG\"\"\"&%!G6#
+*&%$phiGF(%&thetaGF(F(,$*&-%$sinG6#%&thetaG!\"\"-%$cosGF3F(F5" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%$phiG\"\"\"&%!G6#*&%\"rGF
+(%$phiGF(F(*&F(F(%\"rG!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&G
+ammaG%$phiG\"\"\"&%!G6#*&%&thetaGF(%$phiGF(F(*&-%$sinG6#%&thetaG!\"\"-
+%$cosGF2F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%\"rG\"\"\"&
+%!G6#*&%$phiGF(%$phiGF(F(*&%\"rGF()-%$sinG6#%&thetaG\"\"#F(" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%&thetaG\"\"\"&%!G6#*&%$phiGF(%$
+phiGF(F(*&-%$sinG6#%&thetaGF(-%$cosGF2F(" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT 266 62 "All components of the curvature tensor are zeros (=no gr
+avity)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "grcalcalter ( Rie
+mann, 2 ):" }{TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 50 "Simplificati
+on will be applied during calculation." }}{PARA 6 "" 1 "" {TEXT -1 0 "
+" }}{PARA 6 "" 1 "" {TEXT -1 58 "Applying routine `simplify[trig]` to \+
+object R(dn,dn,dn,dn)" }}{PARA 6 "" 1 "" {TEXT -1 51 "Calculated R(dn,
+dn,dn,dn) for Polar (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "g
+rdisplay ( Riemann ):" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%9For~the~Pol
+ar~spacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%2Covariant~RiemannG
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%/R(dn,dn,dn,dn)G%8All~components
+~are~zeroG" }}}{EXCHG {PARA 259 "" 0 "" {TEXT -1 28 "CALCULATIONS FOR \+
+MINKOWSKI:-" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "makeg(mink);
+" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 1 " " }}
+{PARA 6 "" 1 "" {TEXT -1 46 "Makeg 2.0: GRTensor metric/basis entry ut
+ility" }}{PARA 6 "" 1 "" {TEXT -1 1 " " }}{PARA 6 "" 1 "" {TEXT -1 41 
+"To quit makeg, type 'exit' at any prompt." }}{PARA 6 "" 1 "" {TEXT 
+-1 1 " " }}{PARA 6 "" 1 "" {TEXT -1 44 "Do you wish to enter a 1) metr
+ic [g(dn,dn)]," }}{PARA 6 "" 1 "" {TEXT -1 44 "                       \+
+2) line element [ds]," }}{PARA 6 "" 1 "" {TEXT -1 63 "                \+
+       3) non-holonomic basis [e(1)...e(n)], or" }}{PARA 6 "" 1 "" 
+{TEXT -1 49 "                       4) NP tetrad [l,n,m,mbar]?" }}
+{PARA 6 "" 1 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "makeg>" 0 "" 
+{MPLTEXT 1 0 1 "1" }}{PARA 6 "" 1 "" {TEXT -1 33 "Error in input. Plea
+se try again." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "make
+g>" 0 "" {MPLTEXT 1 0 2 "1;" }}{PARA 6 "" 1 "" {TEXT -1 50 "Enter coor
+dinates as a LIST (eg. [t,r,theta,phi]):" }}}{EXCHG {PARA 0 "makeg>" 
+0 "" {MPLTEXT 1 0 9 "[t,x,y,z]" }}{PARA 6 "" 1 "" {TEXT -1 33 "Error i
+n input. Please try again." }}{PARA 6 "" 1 "" {TEXT -1 50 "Enter coord
+inates as a LIST (eg. [t,r,theta,phi]):" }}}{EXCHG {PARA 0 "makeg>" 0 
+"" {MPLTEXT 1 0 10 "[t,x,y,z];" }}{PARA 6 "" 1 "" {TEXT -1 30 "Is the \+
+metric  1) Diagonal, or" }}{PARA 6 "" 1 "" {TEXT -1 28 "              \+
+ 2) Symmetric?" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "1;" }}
+{PARA 6 "" 1 "" {TEXT -1 13 "Enter g[t,t]:" }}}{EXCHG {PARA 0 "makeg>
+" 0 "" {MPLTEXT 1 0 2 "-1" }}{PARA 6 "" 1 "" {TEXT -1 33 "Error in inp
+ut. Please try again." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}}{EXCHG 
+{PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 3 "-1;" }}{PARA 6 "" 1 "" {TEXT -1 
+13 "Enter g[x,x]:" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "1;
+" }}{PARA 6 "" 1 "" {TEXT -1 13 "Enter g[y,y]:" }}}{EXCHG {PARA 0 "mak
+eg>" 0 "" {MPLTEXT 1 0 2 "1;" }}{PARA 6 "" 1 "" {TEXT -1 13 "Enter g[z
+,z]:" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "1;" }}{PARA 6 "
+" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 67 "If there are any c
+omplex valued coordinates, constants or functions" }}{PARA 6 "" 1 "" 
+{TEXT -1 66 "for this spacetime, please enter them as a SET ( eg. \{ z
+, psi \} )." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT 
+-1 33 "Complex quantities [default=\{\}]: " }}}{EXCHG {PARA 0 "makeg>
+" 0 "" {MPLTEXT 1 0 2 "\{\}" }}{PARA 6 "" 1 "" {TEXT -1 2 "\{\}" }}
+{PARA 6 "" 1 "" {TEXT -1 1 " " }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%AThe
+~values~you~have~entered~are:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%,C
+oordinatesG7&%\"tG%\"xG%\"yG%\"zG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%
+(Metric:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&&%\"gG6#%\"aG\"\"\"&%!
+G6#%\"bGF)K%'matrixG6#7&7&!\"\"\"\"!F4F47&F4F)F4F47&F4F4F)F47&F4F4F4F)
+Q(pprint06\"" }}{PARA 6 "" 1 "" {TEXT -1 54 "You may choose to 0) Use \+
+the metric WITHOUT saving it," }}{PARA 6 "" 1 "" {TEXT -1 46 "        \+
+          1) Save the metric as it is," }}{PARA 6 "" 1 "" {TEXT -1 54 
+"                  2) Correct an element of the metric," }}{PARA 6 "" 
+1 "" {TEXT -1 41 "                  3) Re-enter the metric," }}{PARA 
+6 "" 1 "" {TEXT -1 54 "                  4) Add/change constraint equa
+tions, " }}{PARA 6 "" 1 "" {TEXT -1 47 "                  5) Add a tex
+t description, or" }}{PARA 6 "" 1 "" {TEXT -1 61 "                  6)
+ Abandon this metric and return to Maple." }}{PARA 6 "" 1 "" {TEXT -1 
+0 "" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 1 "0" }}{PARA 6 "" 
+1 "" {TEXT -1 33 "Error in input. Please try again." }}{PARA 6 "" 1 "
+" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "makeg>" 0 "" {MPLTEXT 1 0 2 "0;" }}
+{PARA 6 "" 1 "" {TEXT -1 38 "Calculated ds for mink (0.000000 sec.)" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%2Default~spacetimeG%%minkG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#%8For~the~mink~spacetime:G" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#%,CoordinatesG" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#-%\"xG6#%#upG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/)%#x~G%\"aGK%'
+vectorG6#7&%\"tG%\"xG%\"yG%\"zGQ(pprint06\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%-Line~elementG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*$)
+%$~dsG\"\"#\"\"\",**&%#~dGF()%\"tG%#2~GF(!\"\"*&F+F()%\"xGF.F(F(*&F+F(
+)%\"yGF.F(F(*&F+F()%\"zGF.F(F(" }}{PARA 6 "" 1 "" {TEXT -1 18 "makeg()
+ completed." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 114 "xform := [t
+(t)=t,x(r,theta,phi)=r*sin(theta)*cos(phi),y(r,theta,phi)=r*sin(theta)
+*sin(phi),z(r,phi)=r*cos(theta)];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+%&xformG7&/-%\"tG6#F(F(/-%\"xG6%%\"rG%&thetaG%$phiG*(F.\"\"\"-%$sinG6#
+F/F2-%$cosG6#F0F2/-%\"yGF-*(F.F2F3F2-F4F8F2/-%\"zG6$F.F0*&F.F2-F7F5F2
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "grtransform ( mink, min
+kPolar, xform ):" }}{PARA 6 "" 1 "" {TEXT -1 43 "Calculated ds for min
+kPolar (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 36 "The new default
+ metric is: minkPolar" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "gr
+calcalter(x(up),11):" }}{PARA 6 "" 1 "" {TEXT -1 50 "Simplification wi
+ll be applied during calculation." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "grdisplay(x(up),11):" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#%=For~the~minkPolar~spacetime:G" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#%,CoordinatesG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+-%\"xG6#%#upG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/)%#x~G%\"aGK%'vector
+G6#7&%\"tG%\"rG%&thetaG%$phiGQ(pprint06\"" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 38 "grcalc(g(dn,dn));gralter(g(dn,dn),11);" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&" }}{PARA 6 "" 1 "" {TEXT 
+-1 48 "Component simplification of a GRTensorII object:" }}{PARA 6 "" 
+1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 55 "Applying routine `si
+mplify[trigsin]` to object g(dn,dn)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#/%*CPU~Time~G$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "s
+implify(grdisplay(g(dn,dn)),symbolic):" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#%=For~the~minkPolar~spacetime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#%8Covariant~metric~tensorG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%\"g
+G6$%#dnGF&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&&%#g~G6#%\"aG\"\"\"&%
+!G6#%\"bGF)K%'matrixG6#7&7&!\"\"\"\"!F4F47&F4F)F4F47&F4F4*$)%\"rG\"\"#
+F)F47&F4F4F4*&F8F))-%$sinG6#%&thetaGF:F)Q(pprint06\"" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "g
+rcalcalter ( Chr(up,dn,dn), 2 ):" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 27 
+"grdisplay( Chr(up,dn,dn) ):" }}{PARA 6 "" 1 "" {TEXT -1 50 "Simplific
+ation will be applied during calculation." }}{PARA 6 "" 1 "" {TEXT -1 
+0 "" }}{PARA 6 "" 1 "" {TEXT -1 56 "Applying routine `simplify[trig]` \+
+to object g(dn,dn,pdn)" }}{PARA 6 "" 1 "" {TEXT -1 53 "Calculated g(dn
+,dn,pdn) for minkPolar (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 57 
+"Applying routine `simplify[trig]` to object Chr(dn,dn,dn)" }}{PARA 6 
+"" 1 "" {TEXT -1 54 "Calculated Chr(dn,dn,dn) for minkPolar (0.000000 \+
+sec.)" }}{PARA 6 "" 1 "" {TEXT -1 52 "Applying routine `simplify[trig]
+` to object g(up,up)" }}{PARA 6 "" 1 "" {TEXT -1 45 "Calculated detg f
+or minkPolar (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 49 "Calculate
+d g(up,up) for minkPolar (0.000000 sec.)" }}{PARA 6 "" 1 "" {TEXT -1 
+57 "Applying routine `simplify[trig]` to object Chr(up,dn,dn)" }}
+{PARA 6 "" 1 "" {TEXT -1 54 "Calculated Chr(up,dn,dn) for minkPolar (0
+.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G$\"\"!F&
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%=For~the~minkPolar~spacetime:G" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#%.Chr(up,dn,dn)G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/*&)%&GammaG%&thetaG\"\"\"&%!G6#*&%&thetaGF(%\"rGF(F(,$
+*&F(F(%\"rG!\"\"F2" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%$ph
+iG\"\"\"&%!G6#*&%$phiGF(%\"rGF(F(,$*&F(F(%\"rG!\"\"F2" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/*&)%&GammaG%&thetaG\"\"\"&%!G6#*&%\"rGF(%&thetaGF
+(F(*&F(F(%\"rG!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%\"
+rG\"\"\"&%!G6#*&%&thetaGF(%&thetaGF(F(%\"rG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/*&)%&GammaG%$phiG\"\"\"&%!G6#*&%$phiGF(%&thetaGF(F(,$*
+&-%$sinG6#%&thetaG!\"\"-%$cosGF3F(F5" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#/*&)%&GammaG%$phiG\"\"\"&%!G6#*&%\"rGF(%$phiGF(F(*&F(F(%\"rG!\"\"" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&)%&GammaG%$phiG\"\"\"&%!G6#*&%&the
+taGF(%$phiGF(F(*&-%$sinG6#%&thetaG!\"\"-%$cosGF2F(" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/*&)%&GammaG%\"rG\"\"\"&%!G6#*&%$phiGF(%$phiGF(F(*&%
+\"rGF()-%$sinG6#%&thetaG\"\"#F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&
+)%&GammaG%&thetaG\"\"\"&%!G6#*&%$phiGF(%$phiGF(F(*&-%$sinG6#%&thetaGF(
+-%$cosGF2F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "grcalcalter \+
+( Riemann, 2 ):" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "grdisplay ( Riem
+ann ):" }}{PARA 6 "" 1 "" {TEXT -1 50 "Simplification will be applied \+
+during calculation." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "
+" {TEXT -1 58 "Applying routine `simplify[trig]` to object R(dn,dn,dn,
+dn)" }}{PARA 6 "" 1 "" {TEXT -1 55 "Calculated R(dn,dn,dn,dn) for mink
+Polar (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%*CPU~Time~G
+$\"\"!F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%=For~the~minkPolar~spacet
+ime:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%2Covariant~RiemannG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/%/R(dn,dn,dn,dn)G%8All~components~are
+~zeroG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "64 0 \+
+0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }
